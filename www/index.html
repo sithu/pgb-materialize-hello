@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no" />
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/app.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <title>Hello World (with Materialize)</title>
+    <title>Pho Bot Controller</title>
 </head>
 <body class='grey lighten-5'>
     <div class='container'>
-        <h1 class='center-align'>Hello World</h1>
-        <p class='flow-text center-align'>This is an experiment to test out materialize in a PhoneGap build (coincidentally powered by Phone Gap Build). Enjoy!</p>
-        <div class='center-align'>
-        <button class='btn waves-effect waves-light' onclick="toast('Hello World!', 4000)">Say Hi!</button>
+        <h1 class='center'>Pho Bot</h1>
+
+        <div class='container center'>
+        <div class='row'>
+            <div class="col s3">&nbsp;</div>
+
+            <div class="col s3">
+            <button class='btn waves-effect waves-light btn-large' onclick="Materialize.toast('Forward', 4000)">
+                <i class="large material-icons">navigation</i>
+            </button>
+            </div>
+
+            <div class="col s3">&nbsp;</div>
         </div>
+        
+        <div class='row'>
+            <div class="col s3">
+            <button class='btn waves-effect waves-light btn-large' onclick="Materialize.toast('Left', 4000)">
+                <i class="large material-icons">fast_rewind</i>
+            </button>
+            </div>
+
+            <div class="col s3">&nbsp;</div>
+
+            <div class="col s3">
+            <button class='btn waves-effect waves-light btn-large' onclick="Materialize.toast('Right', 4000)">
+                <i class="large material-icons">fast_forward</i>
+            </button>
+            </div>
+        </div>
+        
+        <div class='row'>
+            <div class="col s3">&nbsp;</div>
+
+            <div class="col s3">
+            <button class='btn waves-effect waves-light btn-large' onclick="Materialize.toast('Backward', 4000)">
+                <i class="large material-icons">play_for_work</i>
+            </button>
+            </div>
+
+            <div class="col s3">&nbsp;</div>
+        </div>
+        </div> <!-- container -->
+        
     </div>
     <script src='cordova.js'></script>
     <script src='js/jquery-2.1.3.min.js'></script>
