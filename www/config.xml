@@ -13,5 +13,4 @@
         Sithu Aung
     </author>
     <gap:platform name="android" />
-    <gap:platform name="ios" />
 </widget>
